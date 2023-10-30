@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Condensed&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+#master-head {
+    background: url(../images/mainbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #000407;
+}
+
+.navbar-nav {
+    color: white;
+}
+
+.min-vh-45 {
+    height: 45vh;
+}
+
+#about {
+    background-color: #ffffff;
+}
+
+.hero-h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: calc(100% + 2vw + 2vh);
+    font-weight: bold;
+    margin-bottom: -6px;
+}
+
+.sub-heading {
+    font-family: 'Inter', sans-serif;
+    word-break: keep-all !important;
+    font-size: calc(1% + 1vw + 1vh);
+
+}
+
+.section-h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: calc(100% + 1vw + 1vh);
+    font-weight: bold;
+    margin-bottom: -6px;
+    color: #560303;
+}
+.work {
+background-image: linear-gradient(to right top, #051937, #141d49, #2d1d58, #491762, #670067);
+}
+.works-h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: calc(100% + 1vw + 1vh);
+    font-weight: bold;
+    margin-bottom: -26px;
+    color: #df7f02;
+}
+
+.social {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+
+.footer-bg {
+    background-color: #560303;
+}
+.portfolio {
+    background-color: #560303;
+}
+.portfolio-container {
+
+    padding-bottom: 5vh;
+    margin-top: -100px;
+}
+
+
+.about {
+    text-indent: 2.5rem;
+}
+
+.text-justify {
+    text-indent: 2.5rem;
+}
+
+.modal-title {
+    margin-left: -30px;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    opacity: 85%;
+}
+
+.modal-body {
+    background-color: #242424;
+}
+
+img.profile {
+    padding: 50px;
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
+}
+
+img.profile:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#social-icon-fb {
+    background-image: url(images/icons/facebook.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 10px;
+    height: 48px;
+    width: 48px;
+}
+
+#social-icon-fb:hover {
+    background-image: url(images/icons/facebook-hover.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 10px;
+    height: 48px;
+    width: 48px;
+}
+
+/* works / portfolio section style */
+.testimonial-container {
+    background-image: linear-gradient(to right top, #051937, #141d49, #2d1d58, #491762, #670067);
+}
+
+.intro {
+    color: #ffffff;
+}
+
+/* Lightbox style */
+.lightbox-gallery {
+    background-image: linear-gradient(#4A148C, #E53935);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.lightbox-gallery p {
+    color: #fff;
+}
+
+.lightbox-gallery h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: #fff;
+}
+
+@media (max-width:767px) {
+    .lightbox-gallery h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px
+    }
+}
+
+.lightbox-gallery .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.lightbox-gallery .intro p {
+    margin-bottom: 0;
+}
+
+.lightbox-gallery .photos {
+    padding-bottom: 20px;
+}
+
+.lightbox-gallery .item {
+    padding-bottom: 30px;
+}
+
+/* End of Lightbox style */
+/* Style for the contact form modal */
+.modal-header {
+    background-color: #000407;
+    color: white;
+    text-align: left;
+    padding-right: 25%;
+}
+
+.form-group {
+    margin-bottom: -4px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+/* End of Style for the contact form modal */
+/* Style to vertically center the modal dialog */
+.modal-dialog {
+    opacity: 75%;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+
+@media(max-width: 768px) {
+    .modal-dialog {
+        min-height: calc(100vh - 20px);
+    }
+}
+
+.carousel {
+    margin: 50px auto;
+    padding: 0 70px;
+}
+
+.carousel .item {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 290px;
+}
+
+.carousel .item .img-box {
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+.carousel .img-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.carousel .testimonial {
+    padding: 30px 0 10px;
+}
+
+.carousel .overview {
+    font-style: italic;
+}
+
+.carousel .overview b {
+    text-transform: uppercase;
+    color: #7AA641;
+}
+
+.carousel .carousel-control {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+    background: none;
+}
+
+.carousel-control i {
+    font-size: 68px;
+    line-height: 42px;
+    position: absolute;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+
+.carousel .carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin: 1px 3px;
+    border-radius: 50%;
+}
+
+.carousel-indicators li {
+    background: #999;
+    border-color: transparent;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-indicators li.active {
+    background: #555;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+@keyframes background-color {
+    0% {
+        background: linear-gradient(to bottom, #000428, #004683);
+    }
+
+    25% {
+        background: linear-gradient(135deg, #1a4223, #5ee95e);
+    }
+
+    50% {
+        background: linear-gradient(to bottom, #421a31, #e95ed2);
+    }
+
+    100% {
+        background: linear-gradient(-135deg, #fae37d, #881da8, #20668f);
+    }
+
+}
+
+/* testomonial styles */
+.testimonial-h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: calc(100% + 1vw + 1vh);
+    font-weight: bold;
+    color: #df7f02;
+}
+
+.carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 5rem 8rem;
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2rem;
+}
+@media(max-width:767px){
+    .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+}
+.carousel-caption img{
+    width: 6rem;
+    border-radius: 5rem;
+    margin-top: 2rem;
+}
+@media(max-width:767px){
+    .carousel-caption img{
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem;
+    }
+}
+.image-caption{
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+@media(max-width:767px){
+    #image-caption{
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+    }
+}
+i{
+    background-color: rgb(223, 56, 89);
+    padding: 1.4rem;
+}
+@media(max-width:767px){
+    i{
+        padding: 0.8rem;
+    }
+}
+.carousel-control-prev{
+    justify-content: flex-start;
+}
+
+.carousel-control-next {
+    justify-content: flex-end;
+}
+.carousel-control-prev,.carousel-control-next{
+    transition: none;
+    opacity: unset;
+}
