@@ -67,17 +67,22 @@ background-image: linear-gradient(to right top, #051937, #141d49, #2d1d58, #4917
 .footer-bg {
     background-color: #560303;
 }
-.portfolio {
-    background-color: #560303;
+#photography {
+    background-color: #242424;
+}
+#photography h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: calc(100% + 1vw + 1vh);
+    font-weight: bold;
+    margin-bottom: -6px;
+    color: #df7f02;
 }
 .portfolio-container {
-
+    color: #ffffff;
     padding-bottom: 5vh;
-    margin-top: -100px;
+
 }
-
-
-.about {
+ .about {
     text-indent: 2.5rem;
 }
 
@@ -110,16 +115,74 @@ img.profile:hover {
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-#social-icon-fb {
-    background-image: url(images/icons/facebook.png);
+/* Social Media Icons Style */
+
+.twitter {
+    background-image: url(../images/icons/twitter.png);
     background-repeat: no-repeat;
     background-size: 100%;
     margin-right: 10px;
-    height: 48px;
-    width: 48px;
+    display: inline;
+    float: right;
+    height: 36px;
+    width: 36px;
 }
 
-#social-icon-fb:hover {
+.twitter:hover {
+    background-image: url(../images/icons/twitter-hover.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 10px;
+    display: inline;
+    height: 36px;
+    width: 36px;
+}
+
+.instagram {
+    background-image: url(../images/icons/instagram.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 10px;
+    display: inline;
+    float: right;
+    height: 36px;
+    width: 36px;
+}
+
+.instagram:hover {
+    background-image: url(../images/icons/instagram-hover.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 10px;
+    display: inline;
+    float: right;
+    height: 36px;
+    width: 36px;
+}
+
+.facebook {
+    background-image: url(../images/icons/facebook.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline;
+    float: right;
+    margin-right: 10px;
+    height: 36px;
+    width: 36px;
+}
+
+.facebook:hover {
+    background-image: url(../images/icons/facebook-hover.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 10px;
+    display: inline;
+    float: right;
+    height: 36px;
+    width: 36px;
+}
+
+.social-icon-fb:hover {
     background-image: url(images/icons/facebook-hover.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -129,9 +192,6 @@ img.profile:hover {
 }
 
 /* works / portfolio section style */
-.testimonial-container {
-    background-image: linear-gradient(to right top, #051937, #141d49, #2d1d58, #491762, #670067);
-}
 
 .intro {
     color: #ffffff;
@@ -215,9 +275,13 @@ img.profile:hover {
         min-height: calc(100vh - 20px);
     }
 }
+/* Testomonial Carousel style */
 
+.min-vh-75 {
+    height: 75vh;
+}
 .carousel {
-    margin: 50px auto;
+    margin: -60px auto;
     padding: 0 70px;
 }
 
@@ -296,6 +360,9 @@ img.profile:hover {
 .carousel-indicators li.active {
     background: #555;
     box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.active {
+    margin-bottom: 40px;
 }
 @keyframes background-color {
     0% {
@@ -392,3 +459,89 @@ i{
     transition: none;
     opacity: unset;
 }
+
+.features-clean {
+    color:#242424;
+    background-color:#f1f1f1;
+    padding-bottom:30px;
+  }
+  
+  @media (max-width:767px) {
+    .features-clean {
+      padding-bottom:10px;
+    }
+  }
+  
+  .features-clean p {
+    color:#7d8285;
+  }
+  
+  .features-clean h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit;
+  }
+  
+  @media (max-width:767px) {
+    .features-clean h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  }
+  
+  .features-clean .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto 60px;
+  }
+  
+  @media (max-width:767px) {
+    .features-clean .intro {
+      margin-bottom:40px;
+    }
+  }
+  
+  .features-clean .item {
+    min-height:100px;
+    margin-bottom:40px;
+  }
+  
+  @media (max-width:767px) {
+    .features-clean .item {
+      min-height:0;
+    }
+  }
+  
+  .features-clean .item .name {
+    font-size:20px;
+    font-weight:bold;
+    text-align: center;
+    margin-top:0;
+    margin-bottom:20px;
+    color:inherit;
+    color: #df7f02;   
+  }
+  
+  .features-clean .item .description {
+    font-size:15px;
+    margin-bottom:0;
+    text-align: center;
+    
+  }
+  
+  .features-clean .item .icon {
+    font-size:40px;
+    color:#1485ee;
+    float:left;
+  }
+  .features-clean h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: calc(100% + 1vw + 1vh);
+    font-weight: bold;
+    margin-bottom: -6px;
+    color: #560303;
+  }
+  
+  
