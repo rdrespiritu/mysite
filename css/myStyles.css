@@ -56,7 +56,7 @@ background-image: linear-gradient(to right top, #051937, #141d49, #2d1d58, #4917
 }
 
 .social {
-    position: absolute;
+    margin: 0 auto;
     bottom: 0;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
@@ -116,7 +116,13 @@ img.profile:hover {
 }
 
 /* Social Media Icons Style */
-
+.social-icons {
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+}
 .twitter {
     background-image: url(../images/icons/twitter.png);
     background-repeat: no-repeat;
@@ -459,7 +465,7 @@ i{
     transition: none;
     opacity: unset;
 }
-
+/* services style */
 .features-clean {
     color:#242424;
     background-color:#f1f1f1;
@@ -542,6 +548,14 @@ i{
     font-weight: bold;
     margin-bottom: -6px;
     color: #560303;
+  }
+  .weblink {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .weblink:hover  {
+    text-decoration: none;
+    color: #df7f02;  
   }
   
   
