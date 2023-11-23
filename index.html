@@ -2,416 +2,86 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <!----------------------------Viewport Meta Tag------------------------------------>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rafael Espiritu online portfolio</title>
-  <!----------------------------Bootstrap CDNs------------------------------------>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-  <!-- Popper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Additional script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Intro to Javascript</title>
 
-  <!-- JS libraries for the lightbox modal -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
-  <!--yoo-->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/build.css">
 
-  <!-------- CSS ---------------->
-  <link rel="stylesheet" href="css/myStyles.css">
-  <!--Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Condensed&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
-    rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
 <body>
 
-  <!-- Header section starts here -->
-  <!-- Navigation starts here -->
-  <section id="master-head">
-    <nav class="navbar navbar-expand-lg bg-black bg-opacity-25 navbar-dark fixed-top">
-      <a class="navbar-brand" href="#" data-toggle="tooltip" title="Home Page">
-        <img src="images/logo.png" alt="logo" class="logo"></a>
-      <!-- Start of Collapsible menu-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-        <!-- End of Collapsible menu-->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">HOMETOWN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mysite/patch/index.html" target="_blank">FICTIONAL CHARACTER</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">MADLIBS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#works">WORKS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#photography">PHOTOGRAPHY</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <script>
-      $(document).on('click', function () {
-        $('.navbar .collapse').collapse('hide');
-      })
-    </script>
-    <!-- Navigation bar ends here -->
-    <div class="container d-flex justify-content-center"><!-- This centers the content of the Hero Section -->
-      <div class="row min-vh-100"><!-- This is the Hero section -->
-        <div class="head min-vh-45 cols-sm-12 text-center align-self-center text-white text-uppercase">
-          <h1 class="hero-h1 display-1">Hi. My name is Rafael</h1>
-          <p class="sub-heading">I am a Web and Graphic Designer based in AB, Canada</p>
-          <!-- Contact form modal button -->
-          <a class="btn btn-outline-light btn-sm" href="mailto:hello@rafaelespiritu.ca" role="button">contact me</a>
-          <div class="row social-icons justify-content-center align-bottom">
-            <a class="twitter" href="https://twitter.com/" target="_blank"></a>
-            <a class="instagram" href="https://www.instagram.com/rap.espiritu" target="_blank"></a>
-            <a class="facebook" href="https://www.facebook.com/raf.espiritu" target="_blank"></a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-  <!--Header section ends here-->
-  <section id="about">
-    <div class="col-m-12 container text-black"><!--container for the abount contents-->
-      <div class="row"><!--container for the row-->
-        <div class="col-xl-12 text-center text-uppercase py-4"><!--12-columns-->
-          <h1 class="section-h1 display-1 text-center">ABOUT</h1>
-        </div><!-- End of 12-columns-->
-
-      </div><!-- End of container for the row-->
-      <div class="row d-flex justify-content-center"><!-- row containing the whole about section -->
-        <div class="about col-md-6 container px-md-5 text-center"><!-- Left column content goes here -->
-
-          <img src="images/profile.jpg" alt="profile"
-            class="profile hover-zoom img-fluid float-left rounded-circle py-4">
-        </div>
-        <div class="about col-md-6 container"><!--content for the right column-->
-          <p class="text-justify">
-            Born in the heart of Manila, Philippines, Rafael has always been considered different
-            from the rest of the kids of his age. As a kid, he wanted to be an Architect, but fate had a different plan
-            for him. After spending some time in college, he decided to drop out due to some issues with his college
-            scholarship. He started working as a food service crew member and eventually landed a job as a call center
-            representative.
-          </p>
-          <p class="text-justify">
-            Fueled by his desire to alleviate his career and search for financial freedom, he decided to take a leap of
-            faith and entered the world of freelancing. Armed with an old second-hand laptop, a strong determination to
-            succeed, and a thirst for knowledge, he embarked on a new quest on this uncertain path. His first
-            breakthrough came when he secured his first freelance contract for a VOIP provider in Canada as a project
-            manager and customer support trainer.
-          <p class="text-justify">
-            His stint with the company led to referrals that laid the foundation for his thriving freelance career. He
-            honed the skills he gained from his call center career and used them to his full advantage and relied on
-            these experiences to land jobs as a customer cupport representative and team manager.
-          </p>
-          <!-- Popup trigger -->
-          <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModalLong">
-            more..
-          </button>
-          <!-- End of Popup trigger -->
-          <br>
-          <br>
-          <br>
-          </p>
-          <!-- About me Popup -->
-          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">ABOUT</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  </button>
-                  <a href="#" data-dismiss="modal" class="close-text text-dark font-weight-bold float-right">x</a>
-                </div>
-                <div class="modal-body text-white"><!-- Modal popup content -->
-                  <p class="text-justify">
-                    Born in the heart of Manila, Philippines, Rafael has always been considered different
-                    from the rest of the kids of his age. As a kid, he wanted to be an Architect, but fate had a
-                    different plan
-                    for him. After spending some time in college, he decided to drop out due to some issues with his
-                    college
-                    scholarship. He started working as a food service crew member and eventually landed a job as a call
-                    center representative.
-                  </p>
-                  <p class="text-justify">
-                    Fueled by his desire to alleviate his career and search for financial freedom, he decided to take a
-                    leap of
-                    faith and entered the world of Freelancing. Armed with an old second-hand laptop, a strong
-                    determination to
-                    succeed, and a thirst for knowledge, he embarked on a new quest on this uncertain path. His first
-                    breakthrough came when he secured his first freelance contract for a VOIP provider in Canada as a
-                    project
-                    manager and customer support trainer.
-                  </p>
-                  <p class="text-justify">
-                    His stint with the company led to referrals that laid the foundation for his
-                    thriving freelance career. He
-                    honed the skills he gained from his call center career and used them to his full advantage and
-                    relied on
-                    these experiences to land jobs as a customer cupport representative and team manager. He also used
-                    this
-                    opportunity to further enhance his knowledge by teaching himself new skills like graphic and logo
-                    design.
-                  </p>
-                  <p class="text-justify">
-                    His newly acquired skills and knowledge led to the opening of more opportunities for him. As a way
-                    of
-                    challenging himself, he took part in some Logo design contests and won several of them. The word of
-                    his
-                    talent spread quickly and led him to land graphic design projects for start-up companies from
-                    various parts
-                    of the world. His experiences gave him the opportunity to secure a visa to study in Canada as an
-                    international itudent and hopefully establish a career in the creative design industry.
-                  </p>
-                  <p class="text-justify">
-                    Today, he is in his first term as a Multimedia Production student at Lethbridge College, Lethbridge,
-                    Alberta, Canada. His journey from a predictable 9-5 routine to a prosperous career as a freelancer
-                    serves as
-                    an inspiration to several individuals seeking freedom in their professional lives. With his
-                    determination
-                    and adaptability, Rafael is a reminder that in the world of freelancing, success is only limited by
-                    how much
-                    you are willing to sacrifice, and success is attainable for those who are willing to take the risk
-                    and bold
-                    enough to take the leap of faith to achieve their goals.
-                  </p>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div><!-- End of Modal popup content -->
-                </div>
-              </div>
-            </div>
-            <!-- End of the About me Popup -->
-          </div><!-- end of content for the right column-->
-        </div><!-- End of another set of Row-->
-      </div><!-- End of container for the abount contents-->
-    </div>
-  </section>
-  <!---------------------------------Portfolio------------------------------------>
-  <section id="works">
-    <div class="col-m-12 works pb-2 work">
-      <div class="container">
-        <div class="col-sm-12 text-center text-uppercase py-4"><!--12-columns-->
-          <h1 class="works-h1 display-1 text-center">My works</h1>
-        </div><!-- End of 12-columns-->
-        <!-- Logo works -->
-        <div class="photo-gallery">
-          <div class="container">
-
-            <div class="intro">
-              <p class="text-center">Check out some of my recent works </p>
-            </div>
-
-            <div class="row photos">
-              <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/portfolio/a.jpg"
-                  data-lightbox="photos"><img class="img-fluid" src="images/portfolio/a.jpg"></a></div>
-              <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/portfolio/adorable-gems1.jpg"
-                  data-lightbox="photos"><img class="img-fluid" src="images/portfolio/adorable-gems1.jpg"></a></div>
-              <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/portfolio/adorable-gems6.jpg"
-                  data-lightbox="photos"><img class="img-fluid" src="images/portfolio/adorable-gems6.jpg"></a></div>
-              <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/portfolio/bowbenders3.jpg"
-                  data-lightbox="photos"><img class="img-fluid" src="images/portfolio/bowbenders3.jpg"></a></div>
-              <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/portfolio/leathertime-gold.jpg"
-                  data-lightbox="photos"><img class="img-fluid" src="images/portfolio/leathertime-gold.jpg"></a></div>
-              <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/portfolio/processa.jpg"
-                  data-lightbox="photos"><img class="img-fluid" src="images/portfolio/processa.jpg"></a></div>
-              <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/portfolio/kinderarzt.jpg"
-                  data-lightbox="photos"><img class="img-fluid" src="images/portfolio/kinderarzt.jpg"></a></div>
-              <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/portfolio/ianrobertknightphotog1.jpg"
-                  data-lightbox="photos"><img class="img-fluid" src="images/portfolio/ianrobertknightphotog1.jpg"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End of Logo works -->
-        <!-- JS libraries for the lightbox modal -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-        <!-- End of JS libraries for the lightbox modal -->
-      </div>
-    </div>
-  </section>
-
-  <section id="photography">
-    <!-- you only need one container per section -->
-    <div class="container portfolio-container">
-      <div class="row"><!--this is the First row that contains the 12 column in it-->
-        <div class="col-sm-12 text-center text-uppercase mt-4"><!-- this is the 12 column container-->
-          <h2>PHOTOGRAPHY</h2>
-        </div><!-- this is the end of the 12 column container-->
-      </div><!--this is end of the First row that contains the 12 column in it-->
-      <!-- Second row - container for the three rows spanning 4 columns each-->
-      <div class="photo-gallery">
+    <!----------------------------- Header -------------------------------------------->
+    <header class="bg-main">
         <div class="container">
-          <div>
-            <p class="text-center text-white">Check out some of my Photography works</p>
-          </div>
-          <div class="row photos">
-            <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/photography/DSC04102.jpg"
-                data-lightbox="photos"><img class="img-fluid" src="images/photography/DSC04102.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/photography/DSC04092.jpg"
-                data-lightbox="photos"><img class="img-fluid" src="images/photography/DSC04092.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/photography/DSC03517.jpg"
-                data-lightbox="photos"><img class="img-fluid" src="images/photography/DSC03517.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/photography/DSC04127.jpg"
-                data-lightbox="photos"><img class="img-fluid" src="images/photography/DSC04127.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/photography/DSC03523.jpg"
-                data-lightbox="photos"><img class="img-fluid" src="images/photography/DSC03523.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/photography/DSC04100.jpg"
-                data-lightbox="photos"><img class="img-fluid" src="images/photography/DSC04100.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/photography/DSC04127.jpg"
-                data-lightbox="photos"><img class="img-fluid" src="images/photography/DSC04127.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item mb-4"><a href="images/photography/DSC04130.jpg"
-                data-lightbox="photos"><img class="img-fluid" src="images/photography/DSC04130.jpg"></a>
+            <div class="row align-items-center customHeight">
+                <div class="col-sm-6 text-white">
+                    <h1>Learning JavaScript</h1>
+                    <p>Interactivity for the Modern Web</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <!-- End of Second row - container for the three rows spanning 4 columns each-->
-    </div><!--this is the end of the container -->
+    </header>
 
-  </section>
-  <!-- Testimonial section-->
-  <section id="testimonial">
-    <div class="container">
-      <div class="col-sm-12 text-center text-uppercase py-4"><!--12-columns-->
-        <h1 class="works-h1 display-1 text-center">CLIENT FEEDBACK</h1>
-      </div><!-- End of 12-columns-->
-      <div id="testimonial-slider" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carousel-caption">
-              <p>Great designer. Hopefully can work with him in the future.
-              </p>
-              <img src="images/avatars.svg">
-              <div id="image-caption">Rhasaun Campbell, DDM Brands</div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <p>Rafael worked very well, long and hard for us. The one thing that was always upto the standard of what
-                we look for is his attention to detail. All his other skills are fantastic and he is a truly AMAZING web
-                designer. More than happy to give a full reference to anyone looking to employ him short term or long
-                term.</p>
-              <img src="images/avatars.svg" class="img-fluid">
-              <div class="image-caption">Mitch Sanders, HostZilla</div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <p>Fast and reliable, thanks!</p>
-              <img src="images/avatars.svg" class="img-fluid">
-              <div class="image-caption">Louis Lautman</div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#testimonial-slider" data-slide="prev">
-          <i class="carousel-fas fa-arrow-left">prev</i>
-        </a>
-        <a class="carousel-control-next" href="#testimonial-slider" data-slide="next">
-          <i class="carousel-fas fa-arrow-right">next</i>
-        </a>
-      </div>
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div id="column1" class="col-sm-8 mx-auto bg-main p-5 text-white">
+                    <!---------------------The column where things will change!----------------------->
+                    <h3 class="text-center py-3">We Built This City!</h3>
 
-    </div>
-  </section>
-  <!---------------------------------Footer------------------------------------>
-  <section id="services">
-    <div class="features-clean">
-      <div class="container">
-        <div class="intro">
-          <h2 class="text-center mb-4">WHAT I DO</h2>
-          <p class="text-center">Here are a few things I can do to help you grow and establish your business online:
-          </p>
-        </div>
-        <div class="row features">
-          <div class="col-sm-6 col-lg-4 item">
-            <h3 class="name">LOGO DESIGN and FULL BRANDING</h3>
-            <p class="description">I Design Logo that will represent your brand and establish your company's identity as
-              well as overall branding</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 item">
-            <h3 class="name">FRONT-END WEBSITE DEVELOPMENT</h3>
-            <p class="description">I design industry standard and fully responsive website design compatible with any
-              browser.</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 item">
-            <h3 class="name">VIDEO ADS</h3>
-            <p class="description">I conceptualize and create video advertisements.</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 item">
-          </div>
-          <div class="col-sm-6 col-lg-4 item">
-            <h3 class="name">PRODUCT PHOTOGRAPHY</h3>
-            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in
-              tellus eu gravida. Aliquam varius finibus est.</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 item">
+                    <!-- Form with only a button that will call a Javascript function -->
+                    <form action="javascript:buildOne()">
+                        <button type="submit" class="btn btn-warning btn-block">Building One</button>
+                    </form>
 
-          </div>
+
+                    <!-- Form with only a button that will call a different Javascript function -->
+                    <form action="javascript:buildTwo()">
+                        <button type="submit" class="btn btn-warning btn-block">Building Two</button>
+                    </form>
+
+                    <!-- Form with only a button that will call a third Javascript function -->
+                    <form action="javascript:buildThree()">
+                        <button type="submit" class="btn btn-warning btn-block">Building Three</button>
+                    </form>
+
+                    <!-- Form with only a button that will call a third Javascript function -->
+                    <form action="javascript:buildFour()">
+                        <button type="submit" class="btn btn-warning btn-block">Building Four</button>
+                    </form>                    
+
+                    <!-- Div that will display a message about how many buildings the user put into the city -->
+                    <div id="city" class="my-3"> </div>
+
+                    <!-- Div that will display the buildings the user put into the city -->
+                    <div id="cityGraphic" class="bg_city p-5"></div>
+
+                </div>
+
+            </div>
         </div>
-      </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-  </section>
-  <footer class="footer-bg text-white text-center bg-scallop">
-    <div class="container py-2"><!-- Container -->
-      <div class="row mt-2">
-        <div class="col-sm-4"><!--Left column-->
-          <p>LOCATION</p>
-          <p>123 Fake St., Lethbridge, Alberta
-            <br>
-            Canada, T1K1H1
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <p>Copyright 2023 - Rafael Espiritu
-            <br>
-            <a class="weblink" href="rafaelespiritu ca">www.rafaelespiritu.ca</a>
-          </p>
-        </div><!--Mid column-->
-        <div class="col-sm-4">
-          <p>SOCIALS</p>
-          <div class="row justify-content-center align-bottom">
-            <a class="twitter" href="https://twitter.com/" target="_blank"></a>
-            <a class="instagram" href="https://www.instagram.com/rap.espiritu" target="_blank"></a>
-            <a class="facebook" href="https://www.facebook.com/raf.espiritu" target="_blank"></a>
-          </div><!--Right column-->
-        </div>
-      </div><!-- End of Container -->
-</div>
-  </footer>
+    </section>
+
+
+    <!---------------------Your Custom Javascript----------------------->
+    <script src="js/build.js"></script>
 
 </body>
 
