@@ -59,7 +59,7 @@ console.log("My favorite animal is "+ animal+"!");
 //we use the JavaScript METHOD getElementById() to select something
 //We use the PROPERTY .innerHTML to state that we want to change the HTML that is inside of it
 
-document.getElementById('column1') .innerHTML="<h3>Holy Shiz! I changed the page</h3>";
+document.getElementById('column1') .innerHTML="<h3>Holy Moly! I changed the page</h3>";
 document.getElementById('column1') .innerHTML+="<p>This is an additional paragraph</p>" 
 document.getElementById('column1') .innerHTML+="<p>This is a paragraph</p>" 
 
