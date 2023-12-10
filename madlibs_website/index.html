@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesone -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom javascript -->
+
+    <title>Madlibs Game!</title>
+</head>
+
+<body>
+    <!-- Master head start -->
+    <section class="master-head">
+        <div class="head container container-fluid">
+            <nav class="navbar navbar-expand-lg bg-black bg-opacity-25 navbar-dark fixed-top">
+                <a class="navbar-brand text-center" href="#" data-toggle="tooltip" title="Home Page">
+                    MadLibs Game</a>
+                <!-- Start of Collapsible menu-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <!-- End of Collapsible menu-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.rafaelespiritu.ca" target="_blank">DEVELOPER</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div>
+                <div class="row min-vh-100 align-items-center">
+                    <div class="welcome col-lg-12 col-xs-12 text-center mt-5 p-5">
+                        <h3>Welcome to the wonderful world of Madlibs. This is a fun and entertaining game that ensures
+                            laughter and creativity.</h3>
+                        <br>
+                        <br>
+                        <p>
+                            To play, fill out the forms with any word related to what is being asked. The catch? Each
+                            player
+                            can provide these words without knowing the context of the story leading to unexpected,
+                            absurd,
+                            and often, funny results.
+
+                            Enjoy the game!
+                            <br>
+                            <br>
+                            <a href="#">
+                                <button class="btn-lg modal-btn mt-3" data-toggle="modal" data-target="#formModal">Let
+                                    the Game Begin!</button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Master head end -->   
+    <!-- First Modal Start -->
+    <div class="modal fade text-center align-items-center" id="formModal" tabindex="-1" role="dialog"
+        aria-labelledby="formModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formModalTitle">Let's play the Madlibs Game!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                    <a href="#" data-dismiss="modal" class="close-text text-dark font-weight-bold float-right">x</a>
+                </div>
+                <div class="modal-body p-5">
+                    <p class="modal-intro">Let's start, shall we? Fill out the form fields</p>
+                    <!-- Form Start -->
+                    <form id="madForm" name="madForm" action="javascript:story();">
+                        <div class="form-group row">
+                            <select id="gender" name="gender" class="genderSelect custom-select input-group"
+                                required="required">
+                                <option value="" disabled selected>Select gender</option>
+                                <option value="Man">Man</option>
+                                <option value="Woman">Woman</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="costume"></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-grav"></i>
+                                    </div>
+                                </div>
+                                <input id="costume" name="costume" placeholder="A Custome" type="text"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="superhero"></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-smile-o"></i>
+                                    </div>
+                                </div>
+                                <input id="superhero" name="superhero" placeholder="A Superhero" type="text"
+                                    required="required" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="food"></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-thumbs-o-up"></i>
+                                    </div>
+                                </div>
+                                <input id="food" name="food" placeholder="Any food" type="text" required="required"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="treats"></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-angellist"></i>
+                                    </div>
+                                </div>
+                                <input id="treats" name="treats" placeholder="Treats (candies, gummies, etc)"
+                                    type="text" required="required" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sweets"></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-asterisk"></i>
+                                    </div>
+                                </div>
+                                <input id="sweets" name="sweets" placeholder="Sweets (chocolates, etc)" type="text"
+                                    required="required" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="place"></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-location-arrow"></i>
+                                    </div>
+                                </div>
+                                <input id="place" name="place" placeholder="A spot in the park" type="text"
+                                    required="required" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="action"></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-child"></i>
+                                    </div>
+                                </div>
+                                <input id="action" name="action" placeholder="An Action" type="text" required="required"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bodypart"></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                </div>
+                                <input id="bodypart" name="bodypart" placeholder="A body part" type="text"
+                                    required="required" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="liquid"></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-glass"></i>
+                                    </div>
+                                </div>
+                                <input id="liquid" name="liquid" placeholder="A liquid" type="text" required="required"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="place1"></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                </div>
+                                <input id="place1" name="place1" placeholder="A place" type="text" required="required"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button id="closeFirst" name="submit" type="submit" class="submit btn-lg modal-btn mt-5"
+                                data-toggle="modal" data-target="#formModalOutput">View your story!</button>
+                        </div>
+                    </form>
+                    <!-- Form End  -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- First Modal End -->
+    <!-- Output Modal Start -->
+    <div class="modal fade text-center align-items-center" id="formModalOutput" tabindex="-1" role="dialog"
+        aria-labelledby="formModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formModalOutputTitle">Your MadLibs Story</h5>
+                    <button id="closeSecond" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                    <a href="#" class="close-text text-dark font-weight-bold float-right">x</a>
+                </div>
+                <div id="modalOutputContent" class="modal-body p-5 vh-75">
+                    <!-- Modal output content goes here-->
+                    <p id="modalOutputtext"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- javascript for modal open and close function -->
+    <script>
+        $("#closeFirst").click(function () {
+            $("#formModal").modal('hide');
+            $("#modalOutputContent").modal('show');
+        });
+        $("#closeSecond").click(function () {
+            $("#modalOutputContent").modal('hide');
+        });
+
+    </script>
+    <!-- Output Modal End -->
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

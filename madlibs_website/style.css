@@ -1,0 +1,70 @@
+body { 
+    background-color: #242424;
+    color: #f3f3f3f3;
+}
+/* Nav Bar */
+.navbar {
+    background-color: #000407;
+    text-align: center;
+}
+
+.navbar-nav {
+    color: white;
+}
+/* Nav Bar End */
+/* Header */
+.master-head {
+    background-image: url(images/main-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* header end */
+
+/* welcome box */
+.welcome { 
+    background-color: #252525;
+    opacity: 0.8;
+    border-radius: 12px;
+}
+/* welcome box end */
+/* Modal Box */
+.modal-title {
+    color: #ffffff;
+}
+
+.modal-content {
+    background-color: #f87616;
+    opacity: 85%;
+}
+
+.modal-body {
+    background-color: #242424;
+}
+.modal-btn {
+    background-color: #f87616;
+    border: none;
+}
+.modal-btn:hover {
+    background-color: #b94f11;
+    color: #ffffff;
+    border: none;    
+}
+.modal-intro {
+    margin-top: -34px;
+}
+/* End of Modal Box */
+.form-group {
+    margin-top: -26px;
+}
+#gender {
+    margin: 36px 16px 0 16px;
+}
+#modalOutputContent {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.vh-50 {
+    height: 75vh;
+}
