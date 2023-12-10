@@ -3,7 +3,7 @@ var txt;
 var imagePath;
 var i = 0;
 var speed = 75;
-// Story function //
+// Story //
 function story() {
     var costumevar = document.getElementById('costume').value;
     var heroVar = document.getElementById('superhero').value;
